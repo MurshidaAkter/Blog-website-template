@@ -1,0 +1,584 @@
+/* reset code and common code starts from here */
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+
+html{
+     background-color: rgb(179, 204, 213);
+     font-size: 62.5%; /* convertion 1rem = 10px */
+     scroll-behavior: smooth;
+     font-family: 'Handlee', cursive;
+}
+
+body{
+    /* background-color: rgb(35, 158, 84); */
+    /* width: 165rem; */
+    width: 100%;
+    max-width: 100%;
+    margin: auto; /*the will stay in center*/
+    /* box-shadow: 0.1rem 0.1rem 0.1rem rgb(59, 18, 13), -0.1rem 0rem 0.1rem salmon; */
+
+    overflow-x: hidden; 
+}
+
+.text-justify{
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.section-heading{
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    font-weight: 500;
+}
+
+.text-dark{
+    color: rgb(6, 50, 69);
+}
+
+.text-light{
+    color: antiquewhite;
+}
+
+.bg-dark{
+    background-color: rgb(6, 50, 69);
+}
+
+.bg-light{
+    background-color: antiquewhite;
+}
+
+.section-center{
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn{
+    background-color: antiquewhite;
+    color: rgb(6, 50, 69);
+    
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0.4rem 0.4rem 0.2rem rgb(0, 3, 6);
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    box-shadow: none;
+    background-color: rgb(230, 203, 169)
+}
+/* reset code and common code ends here */
+
+
+/* -------------------Header starts here----------------------------- */
+#header{
+    display: flex;
+    justify-content: space-between;
+    /* all the sections will be seperated by space of the div */
+    align-items: center;  /*vertically centered*/
+    background-color: rgb(6, 50, 69);
+    color: rgb(179, 204, 213);
+    padding: 2rem 1rem;
+    /* width: 100%; */
+
+    position: sticky;
+    top: 0;
+    z-index: 10; /*While scrolling the header will be on top*/
+    min-height: 5vh;
+}
+
+.logo{
+    border: 4px inset rgb(179, 204, 213);
+    border-radius: 2px;
+    margin: 2rem 3rem;
+}
+
+.logo-img{
+    font-size: 5rem;
+    /* padding: 4px; */
+}
+
+#menu-icon{
+    display: none;
+}
+
+nav li{
+    display:inline-block;  
+    /*contents will sets in one row*/
+
+    margin-right: 2rem;
+    padding: 0.8rem;
+    transition: all 0.2s;
+}
+
+nav li:last-child{
+    margin-right: 0.8rem;
+}
+
+nav li:hover{
+    box-shadow: -0.1rem 0.1rem 2rem rgb(255, 252, 247);
+    border: 2px solid antiquewhite;
+    border-radius: 0.6rem;
+}
+
+.nav-link{
+    color: antiquewhite;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* -------------------Header Ends here------------------------------- */
+
+/* banner section starts her-----------------=------------ */
+#banner{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+#banner article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+
+.banner-header{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background-color: rgb(6, 50, 69);
+    color: antiquewhite;
+}
+
+.banner-desc{
+    font-size: 1.8rem;
+}
+
+#banner aside{
+    flex-basis: 50%;
+    /* margin: 1rem; */
+    text-align: center;
+}
+
+.banner-img{
+    width: 55rem;
+    height: 55rem;
+    border: 0.5rem solid rgb(6, 50, 69);
+    /* height: 75vh; */
+}
+/* banner section ends here -------------------------------*/
+
+/* About starts here------------------------------- */
+.card-container{
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    flex: 1;
+    border-radius: 0.8rem;
+    padding: 3rem 1.5rem;
+    margin: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    transition: transform .4s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card-header{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.card-desc{
+    padding: 0.4rem 0;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+
+.card-btn{
+    align-self: center;
+    width: 80%;
+}
+/* ABout Ends------------------------------------- */
+
+/* Archaives section starts-------- */
+#archive{
+    background-color: rgb(253, 208, 150);
+    color: rgb(6, 50, 69);
+}
+
+.arch-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+    padding: 4rem 2rem;
+    border-top: 0.3rem solid rgb(6, 50, 69);
+    border-bottom: 0.3rem solid rgb(6, 50, 69);
+}
+
+.arch-list{
+    display: flex;
+    text-align: center;
+}
+
+.arch-list-elem{
+    margin: 2rem;
+}
+
+
+.arch-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    transition: transform 0.4s;
+}
+
+.arch-img:hover{
+    transform: scale(1.2);
+} 
+
+/* Archaives section ends---------- */
+
+/* Blog-post starts--------------- */
+#blog-post{
+    color: rgb(6, 50, 69);
+}
+
+.blog-post{
+    color: antiquewhite;
+    background-color: rgb(6, 50, 69);
+    width: 70%;
+    display: flex;
+    margin: 4rem 0;
+    padding: 2rem 1rem;
+    border: 0.5rem inset rgb(91, 114, 124);
+    border-radius: 1rem;
+    transition: transform .4s;
+}
+
+.blog-post:hover{
+    transform: scale(1.1);
+}
+
+.blog-post-aside{
+    flex: 1;
+}
+
+.post-img{
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.post-content{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.post-heading{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.post-sub-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.post-desc{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.post-btn{
+    width: 30%;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+/* blog-post ends----------------- */
+
+/* -----------------------CONATCT starts--------------------- */
+#contact{
+    background-color: rgb(46, 82, 97);
+}
+
+#contact-form{
+    background-color: rgb(6, 50, 69);
+    color: antiquewhite;
+    padding: 4rem 2rem;
+    box-shadow: 0.6rem 0.6rem 0.5rem rgb(4, 33, 45);
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control label{
+    font-size: 1.6rem;
+    flex: 0.3;
+}
+
+input,textarea{
+    flex: 0.7;
+    width: 50rem;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+
+textarea{
+    resize: none;
+    height: 12vh;
+}
+
+.btn-field{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-btn{
+    margin-top: 2rem;
+    width: 30%;
+}
+/* -----------------------CONTACT Ends----------------------- */
+
+/* ------------Footer */
+footer{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    font-size: 1.5rem;
+}
+
+.footer-icon{
+    font-size: 2.5rem;
+}
+/* ------------Footer ends */
+
+/* ----Responsive starts--------- */
+@media (max-width: 992px) {
+    #banner{
+        flex-direction: column;
+    }
+
+    #banner article{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .banner-img{
+        height: 65rem;
+        width: 65rem;
+    }
+
+    .card-container{
+        width: 75%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #archive{
+        min-height: auto;
+    }
+
+    .blog-post{
+        flex-direction: column;
+        margin-bottom: 3rem;
+        width: 70%;
+    }
+
+    .post-img{
+        width: 80%;
+        height: 80%;
+        margin-top: 2rem;
+        margin-left: 9.5%;
+        margin-bottom: 2rem;
+    }
+
+    .post-btn{
+        width: 40%;
+    }
+
+    #contact-form{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size: 55.5%;
+    }
+
+    #banner article{
+        width: 80%;
+    }
+
+    .banner-img{
+        height: 55rem;
+        width: 55rem;
+    }
+    
+    .card-container{
+        width: 85%;
+        flex-wrap: wrap;
+    }
+
+    .post-btn{
+        width: 50%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer ul{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 550px) {
+    html{
+        font-size: 48.5%;
+    }
+
+    #header{
+        height: auto;
+        flex-direction: column;
+        /* only flex direction will not work ..have to change the display block */
+    }
+
+    #menu-icon{
+        display: block;
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+
+    nav{
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    nav li{
+        display:block; 
+        /* direction changed */
+
+        margin: 1rem 0;  
+        text-align: center;
+
+        padding: 0.6rem 5rem;
+    }
+
+    .banner-img{
+        max-width: 100%;
+    }
+    #banner article{
+        width: 90%;
+    }
+
+    .card-container{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .arch-list{
+        flex-wrap: wrap;
+    }
+
+    .blog-post{
+        flex-direction: column;
+        margin-bottom: 3rem;
+        width: 60%;
+    }
+
+    .form-control{
+        flex-direction: column;
+    }
+
+    .form-control label{
+        margin-bottom: 1rem;
+    }
+
+    #footer-menubar{
+        display: flex;
+    }
+
+    input,textarea{
+        margin-bottom: 2.2rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    html{
+        align-items: center;
+    }
+
+    body{
+        width: 400px;
+        max-width: fit-content;
+    }
+
+    #header{
+        width: auto;
+    }
+
+    #about{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+/* ----Responsive ends----------- */
+
+
